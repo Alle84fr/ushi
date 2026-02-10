@@ -1,23 +1,26 @@
 //import logo from './logo.svg';
 import './App.css';
+import Pessoa from './components/Pessoa';
+import SayName from './components/SayName';
+import vaca from'./img/ushi_vaca_log.png'
 // importa com apelido e depois coloca imagem
-import vaca from './img/ushi_vaca_log.png';
-import Saluton from './components/Saluton';
-import Frase from './components/Frase';
+
 
 function App() {
 
-  
+  const nome = "Pode valor chumbado"
   //retorno apenas com um elemeto pai, deve estar em div ou dentro de ()
   return (
     <div className="App">
-      <h1>Saluton Cominkanto</h1>
-      <img src={vaca} alt="Vaquinha" />
 
-      <Saluton/>
+      <SayName nome="Ale" />
+      <SayName nome="Alo" />
+      <SayName nome="Alu" />
+      <SayName nome={nome} />
 
-      <Frase></Frase>
-      </div>
+      <Pessoa nomes = "Alee" idade="42" profissão="Revelando" foto={vaca} />
+
+    </div>
   );
 }
 

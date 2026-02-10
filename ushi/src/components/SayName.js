@@ -1,4 +1,4 @@
-function SayName(){
+function SayName(props){
 
     return(
         <div>
@@ -6,3 +6,5 @@ function SayName(){
         </div>
     )
 }
+
+export default SayName
